@@ -1,0 +1,610 @@
+body{
+	height: 100%;
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+	font-family: "Rubik-Light";
+	src: url(fonts/Rubik/Rubik-Light.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Navigation */
+.grid-nav {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+}
+	#NavigationBar{
+		position: fixed;
+		background-color: white; opacity: 0.8;
+		height: 12%;
+		width: 100%;
+		list-style: none;
+		display: grid;
+		grid-auto-rows: auto;
+		align-items: center;
+		text-align: center;
+		z-index: 0;
+		margin-top: 0px;
+	}
+	.headerLogo{
+		font-family: 'Rubik-Light', arial, sans-serif, georgia;
+		font-size: 2.5em;
+		grid-column-start:1 ;
+		grid-column-end: 3;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: black;
+		margin: 0px 0px 0px 100px
+	}
+	.headerLogo:hover{
+		text-decoration: none;
+		color: #087CC3;
+		font-size: 2.5em;
+	}
+	.grid-nav-main{
+		grid-column: 3;
+	}
+	.grid-nav-sec{
+		grid-column: 4;
+	}
+	.grid-nav-sport{
+		grid-column: 5;
+	}
+	.grid-nav-contact{
+		grid-column: 6;
+		padding: 0px 20% 0px 0px
+	}
+	.navLinks {
+	  font-family: 'Rubik-Light', arial, sans-Serif, georgia;
+	  font-size: 1.1em;
+	  text-transform: none;
+	  text-decoration: none;
+	  color: black;
+	}
+	.navLinks:hover {
+		text-decoration: underline;
+		font-size: 1.3em;
+	}
+/*Header*/
+.heroImage {
+	background-image: url('../img/haarlem.png');
+	background-color: #1EA896;
+	height: 900px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+}
+.logo{
+	 opacity: 0.9;
+	 position: absolute;
+   top: 40%;
+   left: 50%;
+   width: 150px;
+   height: 150px;
+   margin-top: -75px;
+   margin-left: -75px;
+	 z-index: 1;
+	 -webkit-filter: drop-shadow(5px 5px 5px #222 );
+   filter: drop-shadow(5px 5px 5px #222);
+}
+.logo:hover{
+	opacity: 1;
+}
+.headerTitle{
+	opacity: 0.9;
+	text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+	font-family: 'Rubik-Light', arial, serif;
+	font-size: 3em;
+	z-index: 1;
+  text-transform: uppercase;
+	padding: 25px;
+	border-radius: 10px;
+	background-color: #087CC3;
+}
+.welcome{
+	text-decoration: none;
+	color: white;
+}
+.headerTitle:hover{
+	opacity: 1;
+}
+/* Main content */
+#MainContent{
+	background-color: #4ABDAC;
+	height: 100%;
+	width: 100%;
+}
+.MainTitle{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 50%;
+	color: white;
+	text-align: center;
+	padding-top: 5%;
+	margin: 0%;
+	font-size: 3em;
+}
+.MainText{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 20%;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 2.5%;
+	margin-left: 15%;
+	font-size: 2em;
+}
+.SideImage{
+	height: 35%;
+	width: 35%;
+	border-radius: 30%;
+	box-shadow: 5px 0px 6px #8b8b8b;
+	margin-right: 10%;
+	margin-top: -20%;
+	float: right;
+}
+.FooterHome{
+	font-family:'Rubik-Light', Arial, Serif;
+	font-size: 1em;
+	width: 50%;
+	color: white;
+	text-align: center;
+	margin-top: 3%;
+	padding-top: -30%;
+}
+.arrow{
+	position: static;
+	display: block;
+	z-index: 2;
+	margin-left: 49%;
+	margin-right: 49%;
+	padding-bottom: 8%;
+	width: 2%;
+	opacity: 0.5;
+}
+.arrow:hover{
+	opacity: 1;
+}
+/* Secondary content */
+#SecondaryContent{
+	background-color: #FC4A1A;
+	height: 100%;
+	width: 100%;
+}
+.AboutTitle{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 50%;
+	color: white;
+	text-align: center;
+	padding-top: 5%;
+	margin: 0%;
+	font-size: 3em;
+}
+.AboutText{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 20%;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 2.5%;
+	margin-left: 15%;
+	font-size: 1.2em;
+}
+.AboutFooter{
+	font-family:'Rubik-Light', Arial, Serif;
+	font-size: 1em;
+	width: 50%;
+	color: white;
+	text-align: center;
+	margin-top: 3%;
+	padding-top: -30%;
+}
+.AboutImage{
+	height: 35%;
+	width: 35%;
+	border-radius: 30%;
+	box-shadow: 5px 0px 6px #8b8b8b;
+	margin-right: 10%;
+	margin-top: -20%;
+	float: right;
+}
+.arrow{
+	position: static;
+	display: block;
+	z-index: 2;
+	margin-left: 49%;
+	margin-right: 49%;
+	padding-bottom: 8%;
+	width: 2%;
+	opacity: 0.5;
+}
+.arrow:hover{
+	opacity: 1;
+}
+/* Sport Content */
+#SportContent{
+	background-color: #F7B733;
+	height: 100%;
+	width: 100%;
+}
+.sportTitle{
+	font-family: 'Rubik-Light', arial, sans-serif;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 2%;
+	font-size: 2em;
+	color: white;
+}
+.sport-grid {
+	display: grid;
+	grid-template-columns: 18% 18% 18% 18% 18%;
+	grid-gap: 2%;
+	padding-bottom: 10%;
+}
+.sport {
+	box-sizing: border-box;
+	background-color: #DFDCE3;
+	border-radius: 1%;
+	list-style: none;
+	text-align: center;
+	color: black;
+	font-family: 'Rubik-Light', arial, serif;
+	height: 100%;
+}
+.sportText{
+	padding: 5%;
+}
+.images{
+	opacity: 1;
+	width: 60%;
+	border-radius: 5%;
+}
+.images:hover{
+	opacity: 0.6;
+}
+.images:visited{
+	width: 50%;
+}
+/* Referral */
+#Referral{
+	background-color: #0375B4;
+	height: 100%;
+	width: 100%;
+}
+.referralTitle{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 70%;
+	color: white;
+	text-align: center;
+	margin: auto;
+	padding: 3%;
+	font-size: 3em;
+}
+.referralText{
+	font-family:'Rubik-Light', Arial, Serif;
+	width: 70%;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin: auto;
+	padding: 2%;
+}
+.referralFooter{
+	font-family:'Rubik-Light', Arial, Serif;
+	font-size: 1em;
+	width: 70%;
+	color: white;
+	text-align: center;
+	margin: auto;
+	padding: 5%;
+}
+.referral{
+	background-color: white;
+	color: #0375B4;
+	padding: 2%;
+	text-decoration: none;
+	border-radius: 5%;
+}
+.referral:hover{
+	background-color: #FFCE00;
+	color: white;
+
+}
+/* Contact */
+#headerContact{
+	position: relative;
+}
+#contactBackground{
+	position: absolute;
+	background-color: #007849;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+	top: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+	z-index: -1;
+}
+.contactForm > h3{
+	color: white;
+	font-family: 'Rubik-Light', Arial, serif;
+	font-size: 3em;
+	text-align: center;
+	padding-top: 10%;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+.contactForm > h4{
+	color: white;
+	font-family: 'Rubik-Light', Arial, serif;
+	font-size: 2em;
+	text-align: center;
+}
+fieldset {
+	display: block;
+	align-items: center;
+  border: none ;
+	line-height: 1.8;
+}
+input[type=text], select {
+  width: 33%;
+	padding: 1%;
+  border-radius: 2%;
+  box-sizing: border-box;
+	margin-left: 33%;
+}
+button{
+	font-family: 'Rubik-Light', Arial, serif;
+	font-size: 2em;
+	color: white;
+	background-color: #A3E4D7;
+	width: 33%;
+	border-radius: 2%;
+	margin-left: 33%;
+	padding: 1%;
+	cursor: pointer;
+}
+/* footer */
+.FixedFooter{
+	color: white;
+	position: fixed;
+	opacity: 0.4;
+	font-family: 'Rubik-Light', arial, sans-serif;
+	font-size: 1em;
+	bottom: 0;
+	left: 40%;
+	width: 100%;
+	height: 5%;
+	text-align: center;
+}
+ @media screen and (max-width: 992px) {
+	.headerLogo{
+		display: none;
+		}
+	.grid-nav{
+		 display: grid;
+		 grid-template-columns: 25% 25% 25% 25%;
+	}
+	.grid-nav-main{
+		grid-column: 1;
+		margin-left: 7%;
+		}
+	.grid-nav-sec{
+		grid-column: 2;
+		}
+	.grid-nav-sport{
+		grid-column: 3;
+		}
+	.grid-nav-contact{
+		grid-column: 4;
+		}
+	#NavigationBar{
+		height: 5%;
+		z-index: 3;
+	}
+		/* Home page  */
+	.AboutTitle{
+		margin: auto;
+	}
+	.AboutText{
+		top: 0;
+		padding: 0;
+		margin: auto;
+		width: 80%;
+	}
+	.SideImage{
+		position: absolute;
+		height: 35%;
+		width: auto;
+		border-radius: 30%;
+		box-shadow: 5px 0px 6px #8b8b8b;
+		margin-top: 5%;
+		margin-left: 25%;
+	}
+	.FooterHome{
+		position: relative;
+		width: 50%;
+		padding-top: 50%;
+		margin: auto;
+	}
+	/* About page */
+	.MainTitle{
+		margin: auto;
+	}
+	.MainText{
+		top: 0;
+		padding: 0;
+		margin: auto;
+		width: 80%;
+	}
+	.AboutImage{
+		position: absolute;
+		height: 35%;
+		width: auto;
+		border-radius: 30%;
+		box-shadow: 5px 0px 6px #8b8b8b;
+		margin-top: 5%;
+		margin-left: 25%;
+	}
+	.AboutFooter{
+		position: relative;
+		width: 50%;
+		padding-top: 50%;
+		margin: auto;
+	}
+	/* Sport content */
+	#SportContent{
+		background-color: #2f2f2f;
+	}
+	.sportTitle{
+		font-family: 'Rubik-Light', arial, sans-serif;
+		text-align: center;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		font-size: 1.5em;
+		color: white;
+	}
+	.sport-grid {
+		display: grid;
+		grid-template-columns: 40% 40%;
+		grid-gap: 2%;
+		z-index: 1;
+	}
+	.sport {
+		box-sizing: border-box;
+		background-color: #DFDCE3;
+		border-radius: 1%;
+		list-style: none;
+		text-align: center;
+		color: black;
+		font-family: 'Rubik-Light', arial, serif;
+		height: 100%;
+		margin-left: 30%;
+		z-index: 1;
+	}
+	.sportText{
+		padding: 5%;
+		z-index: 1;
+	}
+	.images{
+		opacity: 1;
+		width: 60%;
+		border-radius: 5%;
+		z-index: 1;
+	}
+	#Referral{
+		background-color: #a1b2c3;
+		height: 100%;
+		width: 100%;
+	}
+	.contactForm > h3{
+		color: white;
+		font-family: 'Rubik-Light', Arial, serif;
+		font-size: 3em;
+		text-align: center;
+		padding-top: 3%;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
+}
+@media screen and (max-width: 400px) {
+	 .headerLogo{
+		 display: none;
+	}
+	 .grid-nav{
+			display: grid;
+			grid-template-columns: 20% 20% 20% 20%;
+			grid-gap: 2%;
+	 }
+	
+	 #NavigationBar{
+		 background-color: orange; opacity: 0.8;
+		 height: 7%;
+	 }
+	 .heroImage{
+		display: none;
+	}
+		 /* Home page  */
+	.MainTitle{
+		 font-size: 1.5em;
+		 padding-top: 20%;
+	 }
+	 .MainText{
+		 width: 80%;
+		 font-size: 1em;
+		 line-height: 1.6;
+	 }
+	 
+	 .SideImage{
+		 height: 15%;
+	 }
+	 .FooterHome{
+		 font-size: 0.6em;
+	 }
+	 /* About page */
+	 .AboutImage{
+		 height: 15%;
+	 }
+	 .AboutFooter{
+		 font-size: 0.6em;
+	 }
+	 .AboutTitle{
+		 font-size: 1.5em;
+	 }
+	 .AboutText{
+	 	line-height: 1.6;
+	 	font-size: 1em;
+	 }
+	 /* Sport content */
+	 #SportContent{
+		 background-color: #8b8bff;
+	 }
+	 .sport-grid {
+		 grid-template-columns: 80%;
+	 }
+	 .sport {
+		 margin-left: 5%;
+	 }
+	/* Referral */
+	 #Referral{
+		 background-color: #90c190;
+	 }
+	 .referralTitle{
+		padding-top: 10%;
+		font-size: 2em;
+	}
+	.referralText{
+		font-size: 1em;
+		line-height: 1.5;
+	}
+	/* contact */
+	 .contactForm > h3{
+		 font-size: 2em;
+		 padding-top: 2%;
+	 }
+	 #headerContact{
+		position: relative;
+	}
+	.contactForm > h4{
+		font-size: 0.8em;
+		color: #d0ff00
+	}
+	input[type=text], select {
+	  	width: 80%;
+		margin-left: 10%;
+	}
+	button{
+		width: 80%;
+		margin-left: 10%;
+	}
+}
